@@ -1,0 +1,286 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Serene Retreat | Your Perfect Homestay</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/d946ef/ffffff?text=SR">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for smooth scrolling and font */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        /* Custom CSS for a loading spinner */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #8b5cf6;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg fixed w-full z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-violet-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-500" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L3 9v11a2 2 0 002 2h14a2 2 0 002-2V9l-9-7zm0 18a8 8 0 100-16 8 8 0 000 16z"/>
+                </svg>
+                <span>The Serene Retreat</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-violet-600 font-medium transition-colors">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-violet-600 font-medium transition-colors">About</a>
+                <a href="#rooms" class="text-gray-600 hover:text-violet-600 font-medium transition-colors">Rooms</a>
+                <a href="#gallery" class="text-gray-600 hover:text-violet-600 font-medium transition-colors">Gallery</a>
+                <a href="#contact" class="text-gray-600 hover:text-violet-600 font-medium transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-inner">
+            <a href="#home" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition-colors">Home</a>
+            <a href="#about" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition-colors">About</a>
+            <a href="#rooms" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition-colors">Rooms</a>
+            <a href="#gallery" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition-colors">Gallery</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-700 hover:bg-gray-100 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center text-center text-white" style="background-image: url('https://placehold.co/1920x1080/4f46e5/ffffff?text=A+Beautiful+Mountain+Homestay');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 p-6 md:p-10 lg:p-16">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 animate-fade-in-up">Discover Your Sanctuary</h1>
+                <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto animate-fade-in-up">Experience the peace and beauty of our cozy homestay, nestled in the heart of nature.</p>
+                <a href="#contact" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105 animate-fade-in-up">Book Your Stay</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-center md:text-left text-violet-600">About Our Homestay</h2>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Welcome to The Serene Retreat, where tranquility meets comfort. Our family-run homestay is dedicated to providing a personalized and unforgettable experience. We believe in creating a space that feels like a home away from home, with warm hospitality, delicious home-cooked meals, and a peaceful environment.
+                        </p>
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Nestled amidst lush greenery and rolling hills, our property offers a perfect escape from the city bustle. Whether you're a solo traveler, a couple on a romantic getaway, or a family seeking adventure, we have something special for everyone.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/800x600/6b46c1/ffffff?text=Cozy+Living+Area" alt="Cozy living area" class="w-full h-auto rounded-lg shadow-xl object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-violet-600 mb-12">Our Cozy Rooms</h2>
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Room Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/805ad5/ffffff?text=Deluxe+Room" alt="Deluxe Room" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Deluxe Room</h3>
+                            <p class="text-gray-600 text-sm mb-4">A spacious room with a king-size bed, private balcony, and stunning views of the valley.</p>
+                            <a href="#contact" class="inline-block bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold py-2 px-4 rounded-full transition-colors">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Room Card 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/9f7aea/ffffff?text=Standard+Room" alt="Standard Room" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Standard Room</h3>
+                            <p class="text-gray-600 text-sm mb-4">Our comfortable standard room, perfect for solo travelers or couples.</p>
+                            <a href="#contact" class="inline-block bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold py-2 px-4 rounded-full transition-colors">Book Now</a>
+                        </div>
+                    </div>
+                    <!-- Room Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                        <img src="https://placehold.co/600x400/b794f4/ffffff?text=Family+Suite" alt="Family Suite" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Family Suite</h3>
+                            <p class="text-gray-600 text-sm mb-4">A large suite with two separate rooms, ideal for families or groups.</p>
+                            <a href="#contact" class="inline-block bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold py-2 px-4 rounded-full transition-colors">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-violet-600 mb-12">Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <img src="https://placehold.co/600x400/c7d2fe/ffffff?text=Image+1" alt="Gallery Image 1" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/d4d4d8/ffffff?text=Image+2" alt="Gallery Image 2" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/e5e7eb/ffffff?text=Image+3" alt="Gallery Image 3" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/f3f4f6/ffffff?text=Image+4" alt="Gallery Image 4" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/fecaca/ffffff?text=Image+5" alt="Gallery Image 5" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/fde047/ffffff?text=Image+6" alt="Gallery Image 6" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/a7f3d0/ffffff?text=Image+7" alt="Gallery Image 7" class="w-full h-auto rounded-lg shadow-md object-cover">
+                    <img src="https://placehold.co/600x400/d1d5db/ffffff?text=Image+8" alt="Gallery Image 8" class="w-full h-auto rounded-lg shadow-md object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold text-violet-600 mb-12">What Our Guests Say</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"A true hidden gem! The hospitality was incredible and the views were breathtaking. We can't wait to come back!"</p>
+                        <p class="font-semibold text-gray-800">- Jane Doe</p>
+                        <p class="text-sm text-gray-500">Family from New York</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"The perfect escape from city life. So peaceful and relaxing. The food was simply amazing, all home-cooked with love."</p>
+                        <p class="font-semibold text-gray-800">- John Smith</p>
+                        <p class="text-sm text-gray-500">Solo Traveler</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg p-8 shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"We booked a last-minute trip and were so lucky to find this place. The hosts were wonderful and made our stay so comfortable."</p>
+                        <p class="font-semibold text-gray-800">- Emily and Mark</p>
+                        <p class="text-sm text-gray-500">Couple from London</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-violet-600 mb-12">Contact Us</h2>
+                <div class="max-w-xl mx-auto p-8 bg-gray-100 rounded-lg shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500"></textarea>
+                        </div>
+                        <div id="form-status" class="hidden text-center text-green-600 font-bold"></div>
+                        <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.013 4.858.07c1.472.067 2.115.302 2.53.468.455.18.736.38 1.05.694.314.314.514.596.694 1.05.166.415.401 1.058.468 2.53.057 1.274.07 1.654.07 4.858s-.013 3.584-.07 4.858c-.067 1.472-.302 2.115-.468 2.53-.18.455-.38.736-.694 1.05-.314.314-.596.514-1.05.694-.415.166-1.058.401-2.53.468-1.274.057-1.654.07-4.858.07s-3.584-.013-4.858-.07c-1.472-.067-2.115-.302-2.53-.468-.455-.18-.736-.38-1.05-.694-.314-.314-.514-.596-.694-1.05-.166-.415-.401-1.058-.468-2.53-.057-1.274-.07-1.654-.07-4.858s.013-3.584.07-4.858c.067-1.472.302-2.115.468-2.53.18-.455.38-.736.694-1.05.314-.314.596-.514 1.05-.694.415-.166 1.058-.401 2.53-.468C8.416 2.176 8.796 2.163 12 2.163zM12 0C8.74 0 8.337.014 7.07.071c-1.554.07-2.61.32-3.418.64-.81.325-1.47.882-2.13 1.542-.66.66-.99 1.258-1.442 2.108-.453.85-.71 1.905-.78 3.418-.058 1.267-.07 1.67-.07 4.93s.012 3.663.07 4.93c.07 1.513.327 2.568.78 3.418.452.85 1.05 1.508 1.71 2.168.66.66 1.32 1.198 2.13 1.542.808.32 1.864.57 3.418.64 1.267.058 1.67.07 4.93.07s3.663-.012 4.93-.07c1.554-.07 2.61-.32 3.418-.64.81-.325 1.47-.882 2.13-1.542.66-.66.99-1.258 1.442-2.108.453-.85.71-1.905.78-3.418.058-1.267.07-1.67.07-4.93s-.012-3.663-.07-4.93c-.07-1.513-.327-2.568-.78-3.418-.452-.85-1.05-1.508-1.71-2.168-.66-.66-1.32-1.198-2.13-1.542-.808-.32-1.864-.57-3.418-.64C15.663 0 15.26 0 12 0z"/><path d="M12 7a5 5 0 100 10 5 5 0 000-10zM12 15a3 3 0 110-6 3 3 0 010 6z"/><circle cx="17.65" cy="4.58" r="1"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22.25 12c0-5.65-4.574-10.25-10.25-10.25S1.75 6.35 1.75 12c0 5.127 3.722 9.387 8.583 10.155v-7.14H8.094v-3.016h2.24V8.586c0-2.22 1.353-3.428 3.33-3.428 1.282 0 2.37.228 2.37.228v2.607h-1.338c-1.12 0-1.472.697-1.472 1.41v1.704h2.956l-.475 3.016h-2.48v7.14C18.528 21.387 22.25 17.127 22.25 12z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6.17c-.6.26-1.23.44-1.89.52.69-.41 1.22-1.05 1.47-1.81-.65.38-1.36.65-2.12.8-.62-.66-1.5-1.07-2.49-1.07-1.81 0-3.28 1.47-3.28 3.28 0 .26.03.5.09.73-2.73-.14-5.15-1.44-6.77-3.43-.28.48-.44 1.04-.44 1.63 0 1.14.58 2.14 1.47 2.73-.54-.02-1.05-.17-1.5-.41v.04c0 1.59 1.13 2.92 2.63 3.22-.27.07-.56.11-.86.11-.21 0-.42-.02-.62-.06.42 1.3 1.63 2.25 3.07 2.28-1.12.88-2.54 1.41-4.08 1.41-.26 0-.52-.02-.77-.04 1.45.93 3.17 1.47 5.03 1.47 6.04 0 9.35-5 9.35-9.35 0-.14-.01-.28-.01-.42.64-.47 1.19-1.06 1.63-1.74z"/></svg>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 The Serene Retreat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 p-3 bg-violet-600 text-white rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible hover:bg-violet-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // JavaScript for closing the mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // JavaScript for form submission handling (client-side only)
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formStatus = document.getElementById('form-status');
+            formStatus.classList.remove('hidden', 'text-red-500');
+            formStatus.classList.add('text-green-600');
+            formStatus.textContent = "Thank you! Your message has been sent. We'll get back to you shortly.";
+            
+            // Show the message and then hide the form
+            formStatus.classList.remove('hidden');
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+                event.target.reset(); // Reset the form fields
+            }, 5000);
+        });
+
+        // JavaScript for Scroll-to-Top button visibility
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('invisible', 'opacity-0');
+                scrollToTopBtn.classList.add('visible', 'opacity-100');
+            } else {
+                scrollToTopBtn.classList.remove('visible', 'opacity-100');
+                scrollToTopBtn.classList.add('invisible', 'opacity-0');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
