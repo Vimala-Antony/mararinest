@@ -214,7 +214,7 @@ The highlight of our trip was the attentive hosts, who made the trip special. We
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-violet-600 mb-12">Contact Us</h2>
                 <div class="max-w-xl mx-auto p-8 bg-gray-100 rounded-lg shadow-xl">
-                    <form id="contact-form" class="space-y-6">
+                    <form id="contact-form" action="https://formspree.io/f/mandjjda" method="POST" class="space-y-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
                             <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500">
@@ -279,20 +279,20 @@ The highlight of our trip was the attentive hosts, who made the trip special. We
         });
 
         // JavaScript for form submission handling (client-side only)
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formStatus = document.getElementById('form-status');
-            formStatus.classList.remove('hidden', 'text-red-500');
-            formStatus.classList.add('text-green-600');
-            formStatus.textContent = "Thank you! Your message has been sent. We'll get back to you shortly.";
+      //  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      //      event.preventDefault();
+       //     const formStatus = document.getElementById('form-status');
+        //    formStatus.classList.remove('hidden', 'text-red-500');
+        //    formStatus.classList.add('text-green-600');
+        //    formStatus.textContent = "Thank you! Your message has been sent. We'll get back to you shortly.";
             
             // Show the message and then hide the form
-            formStatus.classList.remove('hidden');
-            setTimeout(() => {
-                formStatus.classList.add('hidden');
-                event.target.reset(); // Reset the form fields
-            }, 5000);
-        });
+       //     formStatus.classList.remove('hidden');
+        //    setTimeout(() => {
+        //        formStatus.classList.add('hidden');
+          //      event.target.reset(); // Reset the form fields
+        //    }, 5000);
+      //  });
 
         // JavaScript for Scroll-to-Top button visibility
         const scrollToTopBtn = document.getElementById('scroll-to-top');
@@ -316,6 +316,7 @@ The highlight of our trip was the attentive hosts, who made the trip special. We
     </script>
 </body>
 </html>
+
 
 
 
